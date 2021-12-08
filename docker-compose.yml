@@ -1,7 +1,11 @@
 version: '3'
 services:
     server:
-        image: yfricke/satisfactory-server
+        # Docker hub
+        # image: yfricke/experimental-satisfactory-server
+
+        # Github Container registry
+        image: ghcr.io/yannickfricke/experimental-satisfactory-ds-docker
         ports:
             - 15777:15777/udp
             - 15000:15000/udp
